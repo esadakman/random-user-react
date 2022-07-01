@@ -27,7 +27,7 @@ function App() {
   }
   return (
     <div className="App">
-      <Cards user={user} />
+      <Cards user={user}></Cards>
       <section className="button">
         <button className="btn" id="btn" onClick={() => users()}>
           Generate Person
