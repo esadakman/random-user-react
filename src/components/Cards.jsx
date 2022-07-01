@@ -15,7 +15,7 @@ const Cards = () => {
 
   return (
     <div className="card-container">
-      <span className="pro">Github</span>
+      <span className="pro">User</span>
       {users.map((user, index) => {
         const {
           picture: { large },
@@ -47,17 +47,13 @@ const Cards = () => {
               </div>
               <div className="followers">
                 <h4>Register Date:</h4>
-                <p>{date.toString()}</p>
+                <p>{date.slice(0, 10)}</p>
               </div>
             </div>
           </div>
         );
       })}
-      {/* <div className="buttons"  >
-        <a href="html_url" target="_blank">
-          Random User
-        </a>
-      </div> */}
+
       <button onClick={() => setCount(count + 1)}>Random User</button>
     </div>
   );
