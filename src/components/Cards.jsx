@@ -58,7 +58,7 @@ const Cards = () => {
           Random User
         </a>
       </div> */}
-      <button onClick={() => setCount(count + 1)}>Click</button>
+      <button onClick={() => setCount(count + 1)}>Random User</button>
     </div>
   );
 };
