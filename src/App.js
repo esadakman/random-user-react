@@ -12,7 +12,7 @@ function App() {
     try {
       const { data } = await axios.get(url);
       setUser(data.results[0]);
-      setLoading(false);
+      // setLoading(false);
     } catch (error) {
       alert(error);
     }
@@ -22,17 +22,21 @@ function App() {
     users();
   }, []);
 
-  if (loading) {
-    return <h2>Loading...</h2>;
-  }
+  // if (loading) {
+  //   return <h2>Loading...</h2>;
+  // }
   return (
     <div className="App">
       <Cards user={user}></Cards>
-      <section className="button">
-        <button className="btn" id="btn" onClick={() => users()}>
-          Generate Person
-        </button>
-      </section>
+
+      <div class="buttons">
+        <a href="${html_url}" target="_blank">
+          Random User
+        </a>
+        {/* <a href="${html_url}" target="_blank">
+          Visit Profile
+        </a> */}
+      </div>
     </div>
   );
 }
