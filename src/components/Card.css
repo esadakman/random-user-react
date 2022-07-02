@@ -24,7 +24,7 @@ body {
     position: relative;
     width: 24rem;
     max-height: 28rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 1.4rem;
     margin: .5rem 0 2rem 0;
 }
@@ -55,8 +55,8 @@ body {
 
 .email,
 .name,
-.tel {
-    margin: 0;
+.cell {
+    margin: .7rem;
     padding: .3rem;
 }
 
@@ -84,6 +84,8 @@ body {
 .followers {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    height: 3rem;
 }
 
 button {
@@ -107,3 +109,17 @@ button:hover {
     color: #03BFCB;
     background-color: #090325;
 }
+
+@media screen and (max-width: 800px) {
+
+    .card-container {
+        width: 18rem;
+        height: fit-content
+    }
+
+}
+
+/* .location {
+    overflow: hidden;
+    height: 3rem;
+} */

@@ -5,14 +5,14 @@ const url = "https://randomuser.me/api/";
 
 const Cards = () => {
   const [users, setUsers] = useState([]);
-  const [count, setCount] = useState(0);
+  const [random, setRandom] = useState(true);
 
   useEffect(() => {
     axios.get(url).then((res) => {
       setUsers(res.data.results);
     });
-  }, [count]);
-
+  }, [random]);
+  console.log(random);
   return (
     <div className="card-container">
       <span className="pro">User</span>
@@ -23,8 +23,8 @@ const Cards = () => {
           email,
           cell,
           location: { city, country },
-          // dob: { age },
           registered: { date },
+          // dob: { age },
         } = user;
         return (
           <div key={index}>
@@ -36,13 +36,13 @@ const Cards = () => {
                 </span>
               </h2>
               <h5 className="email">{email}</h5>
-              <h5 className="cell">{cell}</h5>
+              <h5 className="cell">+{cell}</h5>
             </div>
             <div className="infos">
               <div className="location">
                 <h4>Location:</h4>
                 <p>
-                  {country} {city}
+                  {city} /{country}
                 </p>
               </div>
               <div className="followers">
@@ -54,7 +54,7 @@ const Cards = () => {
         );
       })}
 
-      <button onClick={() => setCount(count + 1)}>Random User</button>
+      <button onClick={() => setRandom(!random)}>Random User</button>
     </div>
   );
 };
