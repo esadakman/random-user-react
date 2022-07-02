@@ -8,6 +8,7 @@ Project aims to create a Random User App.
 
 004 - Random User App (folder)
     
+```    
 SOLUTION
 ├── public
 │     └── index.html
