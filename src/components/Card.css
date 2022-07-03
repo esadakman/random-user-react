@@ -2,7 +2,8 @@
 
 
 body {
-    background-color: #28223F;
+    /* background-color: #28223F; */
+    background-image: linear-gradient(to right, #4d456b, #2b96b171);
     font-family: Montserrat, sans-serif;
     min-height: 100vh;
     margin: 0;
