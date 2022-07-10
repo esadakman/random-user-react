@@ -1,14 +1,36 @@
-# Project-004 : Random User App 
+# Random User App 
+
+## Objective
+
+Build a Random User App using ReactJS.
 
 ## Description
 
-Project aims to create a Random User App.
+- Project aims to create a Task Tracker App.
 
-## Project Skeleton
+- In this project i tried to make a simple random user app. I use axios for fetching data. User can get random profiles by clicking the button 
 
-004 - Random User App (folder)
-    
-```    
+
+## Project Link
+
+##### You can reach my project from [here !](https://random-user-react.vercel.app/)
+
+
+### Built With
+
+- HTML
+- CSS
+- JS
+- ReactJS
+- Axios
+
+
+### Project Skeleton
+
+```
+random-user-react (folder)
+|
+|----readme.md
 SOLUTION
 ├── public
 │     └── index.html
@@ -16,31 +38,25 @@ SOLUTION
 │    ├── components
 │    │            └── Card.css
 │    │            └── Card.jsx
-│    ├── App.js
 │    ├── App.css
+│    ├── App.js
 │    ├── index.js
 ├── package.json
 └── yarn.lock
 └── readme.md  
 ```
 
-## Objective
+### Installation
 
-Build a Random User App using ReactJS.
-### At the end of the project, following topics are to be covered;
+To run this project, install it locally using npm or yarn:
 
-- HTML
-- CSS
-- JS
-- ReactJS
-
-### At the end of the project, students will be able to;
-
-- Improve coding skills within HTML & CSS & JS & ReactJS.
-
-- Use git commands (push, pull, commit, add etc.) and Github as Version Control System.
-
-## You can reach my project from [here !](https://random-user-react.vercel.app/)
+```
+$ git clone https://github.com/esadakman/random-user-react.git
+$ cd ../task-tracker-react
+$ npm install / yarn
+$ npm start / yarn start
+```
+ 
+### Preview of the Project 
 
 ![random](https://user-images.githubusercontent.com/98649983/176989961-d1e0a7f0-ad1e-4816-bda9-1b69c80c4c15.gif)
-
