@@ -52,7 +52,7 @@ To run this project, install it locally using npm or yarn:
 
 ```
 $ git clone https://github.com/esadakman/random-user-react.git
-$ cd ../task-tracker-react
+$ cd random-user-react
 $ npm install / yarn
 $ npm start / yarn start
 ```
